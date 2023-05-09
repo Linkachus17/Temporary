@@ -45,8 +45,7 @@ try {
             </table>
             <div style="padding-top: 30px;">
                 <a target="_blank" class="btn_create" href="../Create_Page/index.php">Create</a>
-                <a target="_blank" class="btn_read" href="https://example.com">Read</a>
-                <a target="_blank" class="btn_update" href="https://example.com">Update</a>
+                <a target="_blank" class="btn_update" href="../Update_Page/index.php">Update</a>
                 <a target="_blank" class="btn_delete" href="https://example.com">Delete</a>
             </div>
     </body>
