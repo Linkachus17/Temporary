@@ -16,7 +16,7 @@ try {
 <!DOCTYPE html>
 <html>
     <head>
-        <title>PHP MySQL Query Data Demo</title>
+        <title>Just an ordinary PHP</title>
         <link href="./style.css" rel="stylesheet">
     </head>
     <body class="body">
@@ -29,6 +29,7 @@ try {
                         <th>employee_gender</th>
                         <th>employee_role</th>
                         <th>employee_age</th>
+                        <th>Comment</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,6 +40,7 @@ try {
                             <td><?php echo htmlspecialchars($row['employee_gender']); ?></td>
                             <td><?php echo htmlspecialchars($row['employee_role']); ?></td>
                             <td><?php echo htmlspecialchars($row['employee_age']); ?></td>
+                            <td><?php echo htmlspecialchars($row['Comment']); ?></td>
                         </tr>
                     <?php endwhile; ?>
                 </tbody>
@@ -46,7 +48,7 @@ try {
             <div style="padding-top: 30px;">
                 <a target="_blank" class="btn_create" href="../Create_Page/index.php">Create</a>
                 <a target="_blank" class="btn_update" href="../Update_Page/index.php">Update</a>
-                <a target="_blank" class="btn_delete" href="https://example.com">Delete</a>
+                <a target="_blank" class="btn_delete" href="../Delete_Page/index.php">Delete</a>
             </div>
     </body>
 </html>

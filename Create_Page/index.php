@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>PHP MySQL Query Data Demo</title>
+    <title>PHP Create Data</title>
     <link href="./style.css" rel="stylesheet">
 
 </head>
@@ -38,9 +38,14 @@
 
             <label for="Age">Employee Age: </label>
             <input type="number" name="employee_age">
+            <br>
+            <br>
+
+            <Label for="Comment">Comments: </Label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
         </div>
 
-        <div style="padding-top: 50px;"><button type="submit" name="register" class="btn_create">Register!</button></div>
+        <div style="padding-top: 50px;"><button type="submit" name="register" class="btn_create">Create</button></div>
 
         <?php
         if (isset($_POST["register"])) {
@@ -83,9 +88,10 @@
                     $employee_gender = $_POST['employee_gender'];
                     $employee_role = $_POST['employee_role'];
                     $employee_age = $_POST['employee_age'];
+                    $comment = $_POST['comment'];
 
 
-                    $sql = "INSERT INTO `web_employee` VALUES ('$employee_id', '$employee_name', '$employee_gender', '$employee_role', '$employee_age') ";
+                    $sql = "INSERT INTO `web_employee` VALUES ('$employee_id', '$employee_name', '$employee_gender', '$employee_role', '$employee_age', '$comment') ";
 
                     return $this->pdo->exec($sql);
                 }
